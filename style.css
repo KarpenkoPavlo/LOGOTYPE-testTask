@@ -1,0 +1,83 @@
+/* fonts start */
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:regular,500,700,800,italic&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap);
+/* fonts end */
+
+/* style import start */
+@import url(./style/header.css);
+@import url(./style/mainHeader.css);
+@import url(./style/mainGame.css);
+@import url(./style/mainInfo.css);
+@import url(./style/footer.css);
+/* style import end */
+
+/* reset style start */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+button,
+input {
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+}
+button {
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+}
+/* reset style end */
+
+/* default style start */
+body {
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #FCFCFC;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+[class*="__container"] {
+    max-width: 1170px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+/* default style end */
+
+.main {
+    padding-top: 31px;
+}

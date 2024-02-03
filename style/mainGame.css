@@ -1,0 +1,140 @@
+.mainGame {
+    padding-top: 81px;
+}
+.mainGame__container {
+    display: flex;
+    justify-content: space-between;
+    background: url(../img/mainGame/mainGameBackground.jpg);
+    background-repeat: no-repeat;
+    border-radius: 40px;
+}
+.mainGameLeft {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px 20px 56px;
+}
+.mainGameLeft img {
+    border-radius: 10px;
+}
+.mainGame-download {
+}
+.mainGame-title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+}
+.mainGame-menu {
+    padding-top: 10px;
+}
+.mainGame-items {
+    display: flex;
+    gap: 8px;
+}
+.mainGame-item {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    gap: 6px;
+    border: 1px solid #fff;
+    border-radius: 17px;
+    padding: 7px 14px;
+    cursor: pointer;
+}
+.mainGame-item:hover {
+    background: linear-gradient(90deg, #0DD0BA 0%, #2A86E5 100%);
+}
+.mainGameRight {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 59px 20px 0px;
+}
+.mainGameStat {
+    display: grid;
+    place-content: center;
+    background-color: #0E1219;
+    border: 7px solid orange;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 120%;
+}
+.mainGame-rating {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ratingTitle1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+.ratingTitle2 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+.ratingTitle3 {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.ratingTitle3 span {
+    color: #F9B936;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 2px;
+}
+
+.mainEvaluation__container {
+}
+.mainEvaluation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+.mainEvaluation-menu {
+}
+.mainEvaluation-items {
+    display: flex;
+    gap: 19px;
+}
+.mainEvaluation-item {
+    color: #707070;
+    font-size: 16px;
+}
+.mainEvaluation-raiting {
+    border-radius: 17px;
+}
+.mainEvaluation-ratingItems {
+    display: flex;
+}
+.mainEvaluation-ratingItem {
+    color: #707070;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 120%;
+    cursor: pointer;
+    background: #EBF6F5;
+    padding: 10px 7px;
+}
+.mainEvaluation-ratingItem:hover {
+    background: linear-gradient(270deg, #FCC539 0%, #DC4A19 100%);
+    color: #fff;
+}
+.mainEvaluation-ratingItem:nth-child(1) {
+    border-radius: 17px 0px 0px 17px;
+    padding-left: 11px;
+}
+.mainEvaluation-ratingItem:nth-child(11) {
+    border-radius: 0px 17px 17px 0px;
+    padding-left: 11px;
+}
