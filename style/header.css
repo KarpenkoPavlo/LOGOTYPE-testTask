@@ -1,6 +1,11 @@
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
     background: linear-gradient(90deg, #0DD0BA 0%, #2A86E5 100%);
     padding: 10px;
+    z-index: 10;
 }
 .header__container {
     display: flex;
@@ -22,6 +27,10 @@ header {
 .headerLeft-item {
     display: flex;
     gap: 4.5px;
+    cursor: pointer;
+}
+.headerLeft-item:hover {
+    text-decoration: underline;
 }
 .headerRight {
     margin-left: auto;
@@ -32,7 +41,9 @@ header {
 }
 .headerRight-item {
     display: flex;
+    cursor: pointer;
 }
+
 .bttDayNight {
     display: flex;
     align-items: center;
@@ -42,21 +53,29 @@ header {
     background-color: #fff;
     padding: 2px 3px;
     margin-left: 28px;
-
 }
 .bttDay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    text-align: center;
     width: 25px;
     height: 25px;
     border-radius: 12.5px;
     background-color: #183A5D;
+    cursor: pointer;
+}
+.bttDay img {
+    padding-top: 5px;
 }
 .bttNight {
     display: none;
+    text-align: center;
     width: 25px;
     height: 25px;
     border-radius: 12.5px;
     background-color: #183A5D;
+    cursor: pointer;
+    margin-left: auto;
+}
+.bttNight img {
+    padding-top: 5px;
 }

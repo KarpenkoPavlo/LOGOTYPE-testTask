@@ -1,0 +1,23 @@
+body {
+    background: black;
+}
+
+.bttDay {
+    display: none;
+}
+.bttNight {
+    display: block;
+    background-color: white;
+}
+.bttDayNight {
+    backgroundColor : #183A5D;
+}
+.mainSearchInput {
+    backgroundColor : rgba(24, 58, 93, 1);
+}
+.mainSearchInput {
+    color : rgba(255, 255, 255, 1);
+}
+.mainGame__container {
+    backgroundColor : rgba(14, 18, 25, 1);
+}

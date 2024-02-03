@@ -11,6 +11,10 @@
 @import url(./style/footer.css);
 /* style import end */
 
+/* day-night theme start */
+@import url(./night-theme/day.css);
+/* day-night theme end */
+
 /* reset style start */
 *,
 *::before,
@@ -73,7 +77,6 @@ body {
 }
 [class*="__container"] {
     max-width: 1170px;
-    padding: 0px 15px;
     margin: 0 auto;
 }
 /* default style end */

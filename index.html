@@ -55,10 +55,10 @@
                     </ul>
                 </nav>
                 <div class="bttDayNight">
-                    <div class="bttDay">
+                    <div class="bttDay" onclick="toggleDayNight()">
                         <img src="/img/Day-Night/day.svg" alt="button-day">
                     </div>
-                    <div class="bttNight">
+                    <div class="bttNight" onclick="toggleDayNight()">
                         <img src="/img/Day-Night/night.svg" alt="night-day">
                     </div>
                 </div>
@@ -68,7 +68,7 @@
         <main class="main">
             <section class="mainHeader__container">
                 <div class="mainHeader-logo">
-                    <img src="/img/mainHeader/mainHeaderLogo.svg" alt="mainHeader-logo">
+                    <img src="/img/mainHeader/mainHeaderLogo.svg" alt="mainHeader-logo" class="mainHeaderImgLogo">
                 </div>
                 <nav class="mainHeader-menu">
                     <ul class="mainHeader-items">
@@ -89,69 +89,70 @@
 
             <section class="mainGame">
                 <div class="mainGame__container">
-                    <div class="mainGameLeft">
-                        <img src="/img/logo.svg" alt="mainGame-logo">
-                        <div class="mainGame-download">
-                            <h1 class="mainGame-title">Lorem Ipsum is simply dummy</h1>
-                            <nav class="mainGame-menu">
-                                <ul class="mainGame-items">
-                                    <li class="mainGame-item">
-                                        <img src="/img/mainGame/mainGameItem1.svg" alt="mainGame-item">
-                                        Android
-                                    </li>
-                                    <li class="mainGame-item">
-                                        <img src="/img/mainGame/mainGameItem2.svg" alt="mainGame-item">
-                                        iOS
-                                    </li>
-                                    <li class="mainGame-item">
-                                        <img src="/img/mainGame/mainGameItem3.svg" alt="mainGame-item">
-                                        Download on PC
-                                    </li>
+                    <div class="mainLeftRight">
+                        <div class="mainGameLeft">
+                            <img src="/img/logo.svg" alt="mainGame-logo">
+                            <div class="mainGame-download">
+                                <h1 class="mainGame-title">Lorem Ipsum is simply dummy</h1>
+                                <nav class="mainGame-menu">
+                                    <ul class="mainGame-items">
+                                        <li class="mainGame-item">
+                                            <img src="/img/mainGame/mainGameItem1.svg" alt="mainGame-item">
+                                            Android
+                                        </li>
+                                        <li class="mainGame-item">
+                                            <img src="/img/mainGame/mainGameItem2.svg" alt="mainGame-item">
+                                            iOS
+                                        </li>
+                                        <li class="mainGame-item">
+                                            <img src="/img/mainGame/mainGameItem3.svg" alt="mainGame-item">
+                                            Download on PC
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="mainGameRight">
+                            <div class="mainGameStat">6.4</div>
+                            <div class="mainGame-rating">
+                                <h1 class="ratingTitle1">Players</h1>
+                                <h1 class="ratingTitle2">12 votes</h1>
+                                <h1 class="ratingTitle3">Your rating:<span>5.2</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainEvaluation__container">
+                        <div class="mainEvaluation">
+                            <nav class="mainEvaluation-menu">
+                                <ul class="mainEvaluation-items">
+                                    <li class="mainEvaluation-item">Lorem Ipsum is simply dummy</li>
+                                    <hr>
+                                    <li class="mainEvaluation-item">item</li>
+                                    <hr>
+                                    <li class="mainEvaluation-item">item</li>
+                                    <hr>
+                                    <li class="mainEvaluation-item">item</li>
+                                    <hr>
+                                    <li class="mainEvaluation-item">item</li>
+                                </ul>
+                            </nav>
+                            <nav class="mainEvaluation-raiting">
+                                <ul class="mainEvaluation-ratingItems">
+                                    <li class="mainEvaluation-ratingItem">Note</li>
+                                    <li class="mainEvaluation-ratingItem">1</li>
+                                    <li class="mainEvaluation-ratingItem">2</li>
+                                    <li class="mainEvaluation-ratingItem">3</li>
+                                    <li class="mainEvaluation-ratingItem">4</li>
+                                    <li class="mainEvaluation-ratingItem">5</li>
+                                    <li class="mainEvaluation-ratingItem">6</li>
+                                    <li class="mainEvaluation-ratingItem">7</li>
+                                    <li class="mainEvaluation-ratingItem">8</li>
+                                    <li class="mainEvaluation-ratingItem">9</li>
+                                    <li class="mainEvaluation-ratingItem">10</li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
-                    <div class="mainGameRight">
-                        <div class="mainGameStat">6.4</div>
-                        <div class="mainGame-rating">
-                            <h1 class="ratingTitle1">Players</h1>
-                            <h1 class="ratingTitle2">12 votes</h1>
-                            <h1 class="ratingTitle3">Your rating:<span>5.2</span></h1>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mainEvaluation__container">
-                <div class="mainEvaluation">
-                    <nav class="mainEvaluation-menu">
-                        <ul class="mainEvaluation-items">
-                            <li class="mainEvaluation-item">Lorem Ipsum is simply dummy</li>
-                            <hr>
-                            <li class="mainEvaluation-item">item</li>
-                            <hr>
-                            <li class="mainEvaluation-item">item</li>
-                            <hr>
-                            <li class="mainEvaluation-item">item</li>
-                            <hr>
-                            <li class="mainEvaluation-item">item</li>
-                        </ul>
-                    </nav>
-                    <nav class="mainEvaluation-raiting">
-                        <ul class="mainEvaluation-ratingItems">
-                            <li class="mainEvaluation-ratingItem">Note</li>
-                            <li class="mainEvaluation-ratingItem">1</li>
-                            <li class="mainEvaluation-ratingItem">2</li>
-                            <li class="mainEvaluation-ratingItem">3</li>
-                            <li class="mainEvaluation-ratingItem">4</li>
-                            <li class="mainEvaluation-ratingItem">5</li>
-                            <li class="mainEvaluation-ratingItem">6</li>
-                            <li class="mainEvaluation-ratingItem">7</li>
-                            <li class="mainEvaluation-ratingItem">8</li>
-                            <li class="mainEvaluation-ratingItem">9</li>
-                            <li class="mainEvaluation-ratingItem">10</li>
-                        </ul>
-                    </nav>
                 </div>
             </section>
 
@@ -317,6 +318,6 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>

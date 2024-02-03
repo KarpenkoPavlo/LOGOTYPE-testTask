@@ -2,11 +2,16 @@
     padding-top: 81px;
 }
 .mainGame__container {
+    background: rgba(255, 255, 255, 1);
+    border-radius: 45px 45px 40px 40px;
+}
+.mainLeftRight {
     display: flex;
     justify-content: space-between;
     background: url(../img/mainGame/mainGameBackground.jpg);
     background-repeat: no-repeat;
     border-radius: 40px;
+    padding: 0px;
 }
 .mainGameLeft {
     display: flex;
@@ -98,7 +103,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 8px;
+    padding: 8px 33px 8px 56px;
 }
 .mainEvaluation-menu {
 }
@@ -109,6 +114,10 @@
 .mainEvaluation-item {
     color: #707070;
     font-size: 16px;
+    cursor: pointer;
+}
+.mainEvaluation-item:hover {
+    text-decoration: underline;
 }
 .mainEvaluation-raiting {
     border-radius: 17px;
@@ -126,7 +135,8 @@
     background: #EBF6F5;
     padding: 10px 7px;
 }
-.mainEvaluation-ratingItem:hover {
+.mainEvaluation-ratingItem:hover,
+.mainEvaluation-ratingItem:hover ~ .mainEvaluation-ratingItem {
     background: linear-gradient(270deg, #FCC539 0%, #DC4A19 100%);
     color: #fff;
 }
