@@ -8,6 +8,7 @@
 .mainLeftRight {
     display: flex;
     justify-content: space-between;
+    height: 184px;
     background: url(../img/mainGame/mainGameBackground.jpg);
     background-repeat: no-repeat;
     border-radius: 40px;
@@ -135,16 +136,91 @@
     background: #EBF6F5;
     padding: 10px 7px;
 }
+.mainEvaluation-ratingItem:not(:first-child) {
+    border-left: 1px solid rgba(112, 112, 112, 0.15);
+}
 .mainEvaluation-ratingItem:hover,
-.mainEvaluation-ratingItem:hover ~ .mainEvaluation-ratingItem {
-    background: linear-gradient(270deg, #FCC539 0%, #DC4A19 100%);
+.mainEvaluation-ratingItem.hovered {
+    background: linear-gradient(170deg, #FCC539 0%, #DC4A19 100%);
     color: #fff;
 }
+
 .mainEvaluation-ratingItem:nth-child(1) {
     border-radius: 17px 0px 0px 17px;
     padding-left: 11px;
 }
+
 .mainEvaluation-ratingItem:nth-child(11) {
     border-radius: 0px 17px 17px 0px;
-    padding-left: 11px;
+    padding-right: 11px;
+}
+
+@media(max-width: 991px) {
+    .ratingTitle3 {
+        width: 119px;
+    }
+    .mainGameLeft {
+        padding-left: 30px;
+    }
+    .mainGameRight {
+        padding-right: 30px;
+    }
+    .mainGame-items {
+        flex-wrap: wrap;
+    }
+    .mainEvaluation {
+        display: grid;
+        justify-content: center;
+        gap: 15px;
+    }
+    .mainEvaluation-raiting {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainGame {
+        padding-top: 21px;
+    }
+    .mainGame-menu {
+        display: none;
+    }
+    .mainLeftRight {
+        justify-content: center;
+    }
+    .mainGameLeft {
+        padding: 30px;
+    }
+    .mainGameRight {
+        display: none;
+    }
+    .mainGame-title {
+        font-size: 35px;
+        line-height: 42px;
+        text-align: center;
+    }
+    .mainEvaluation {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .mainGame-title {
+        font-size: 24px;
+        line-height: 29px; 
+    }
+    .mainLeftRight {
+        height: 129px;
+
+    }
+    .mainGameLeft img {
+        width: 95px;
+    }
+    .mainGameLeft {
+        padding-left: 20px;
+    }
+    .mainGameRight {
+        padding-right: 20px;
+    }
 }

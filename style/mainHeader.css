@@ -1,5 +1,5 @@
 .main {
-    padding-bottom: 200px;
+    padding: 0px 24px 200px 24px;
 }
 .mainHeader__container {
     display: flex;
@@ -51,4 +51,27 @@
     left: 0;
     width: 20px;
     height: 20px;
+}
+
+@media (max-width: 991px) {
+    .mainHeader__container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    .mainHeader-menu {
+        padding-left: 0px;
+    }
+    .mainSearch-form {
+        width: 100%;
+    }
+    .mainSearch-input {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .mainSearch-form,
+    .mainHeader-menu {
+        display: none;
+    }
 }
