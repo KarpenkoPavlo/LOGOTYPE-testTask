@@ -1,4 +1,5 @@
 .mainGame {
+    position: relative;
     padding-top: 81px;
 }
 .mainGame__container {

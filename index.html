@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link id="lightTheme" rel="stylesheet" href="/dark-theme/light.css">
-    <link id="darkTheme" rel="stylesheet" href="/dark-theme/dark.css" disabled>
+    <link id="themeDayDark" rel="stylesheet" href="/dark-theme/light.css">
     <link rel="icon" href="/img/ico.png">
     <title>LOGOTYPE</title>
 </head>
 <body>
 
     <div class="wrapper">
+
         <header class="header">
             <div class="header__container">
                 <nav class="headerLeft">
@@ -57,10 +57,10 @@
                     </ul>
                 </nav>
                 <div class="bttDayNight">
-                    <div class="bttDay" onclick="toggleDayNight()">
+                    <div class="bttDay" onclick="lightThemeToggle()">
                         <img src="/img/Day-Night/day.svg" alt="button-day">
                     </div>
-                    <div class="bttNight" onclick="toggleDayNight()">
+                    <div class="bttNight" onclick="darkThemeToggle()">
                         <img src="/img/Day-Night/night.svg" alt="night-day">
                     </div>
                 </div>
@@ -71,6 +71,11 @@
             <section class="mainHeader__container">
                 <div class="mainHeader-logo">
                     <img src="/img/mainHeader/mainHeaderLogo.svg" alt="mainHeader-logo" class="mainHeaderImgLogo">
+                </div>
+                <div class="header__burger" id="burger">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
                 </div>
                 <nav class="mainHeader-menu">
                     <ul class="mainHeader-items">
@@ -90,6 +95,28 @@
             </section>
 
             <section class="mainGame">
+                <div class="bodySocial">
+                    <ul class="bodySocial-items">
+                        <li class="bodySocial-item">
+                            <img src="/img/bodySocial/bodySocialItem1.svg" alt="bodySocial-item1">
+                        </li>
+                        <li class="bodySocial-item">
+                            <img src="/img/bodySocial/bodySocialItem2.svg" alt="bodySocial-item2">
+                        </li>
+                        <li class="bodySocial-item">
+                            <img src="/img/bodySocial/bodySocialItem3.svg" alt="bodySocial-item3">
+                        </li>
+                        <li class="bodySocial-item">
+                            <img src="/img/bodySocial/bodySocialItem4.svg" alt="bodySocial-item4">
+                        </li>
+                        <li class="bodySocial-item">
+                            <img src="/img/bodySocial/bodySocialItem5.svg" alt="bodySocial-item5">
+                        </li>
+                        <li class="bodySocial-item">
+                            <img src="/img/bodySocial/bodySocialItem6.svg" alt="bodySocial-item6">
+                        </li>
+                    </ul>
+                </div>
                 <div class="mainGame__container">
                     <div class="mainLeftRight">
                         <div class="mainGameLeft">

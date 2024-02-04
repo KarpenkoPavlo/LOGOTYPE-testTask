@@ -1,0 +1,62 @@
+.bodySocial {
+    position: fixed;
+    padding-top: 236px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.bodySocial-items {
+}
+.bodySocial-item {
+    display: grid;
+    place-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.bodySocial-item:nth-child(1) {
+    border-radius: 0px 4px 0px 0px;
+    background: rgba(58, 87, 154, 1);
+}
+.bodySocial-item:nth-child(2) {
+    background: rgba(0, 171, 240, 1);
+}
+.bodySocial-item:nth-child(3) {
+    background: rgba(36, 162, 224, 1);
+}
+.bodySocial-item:nth-child(4) {
+    background: rgba(205, 28, 31, 1);
+}
+.bodySocial-item:nth-child(5) {
+    background: rgba(252, 70, 30, 1);
+}
+.bodySocial-item:nth-child(6) {
+    border-radius: 0px 0px 4px 0px;
+    background: rgba(249, 81, 73, 1);
+}
+
+.bodySocial-item:nth-child(1):hover {
+    background: rgb(78, 104, 164);
+}
+.bodySocial-item:nth-child(2):hover {
+    background: rgb(79, 184, 226);
+}
+.bodySocial-item:nth-child(3):hover {
+    background: rgb(74, 181, 234);
+}
+.bodySocial-item:nth-child(4):hover {
+    background: rgb(189, 79, 81);
+}
+.bodySocial-item:nth-child(5):hover {
+    background: rgb(242, 111, 82);
+}
+.bodySocial-item:nth-child(6):hover {
+    background: rgb(244, 109, 102);
+}
+
+@media (max-width: 778px) {
+    .bodySocial {
+        display: none;
+    }
+}

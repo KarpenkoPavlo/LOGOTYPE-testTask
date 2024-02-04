@@ -176,7 +176,8 @@
         font-size: 35px;
         font-weight: 900;
         line-height: 45px;
-        letter-spacing: 0.5px;   
+        letter-spacing: 0.5px;
+        text-align: center;
     }
     .mainInfo-itemsLeft {
         justify-content: center;

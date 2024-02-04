@@ -1,5 +1,5 @@
 body {
-    background: black;
+    background-color: black;
 }
 
 .bttDay {
@@ -10,14 +10,21 @@ body {
     background-color: white;
 }
 .bttDayNight {
-    backgroundColor : #183A5D;
+    background-color : #183A5D;
 }
 .mainSearchInput {
-    backgroundColor : rgba(24, 58, 93, 1);
-}
-.mainSearchInput {
+    background-color : rgba(24, 58, 93, 1);
     color : rgba(255, 255, 255, 1);
 }
 .mainGame__container {
-    backgroundColor : rgba(14, 18, 25, 1);
+    background-color : rgba(14, 18, 25, 1);
+}
+.footerLeft {
+    background-color: rgba(32, 36, 52, 1);
+}
+.footerLeft-title {
+    color: rgba(255, 255, 255, 1);
+}
+.footerText {
+    color: rgba(255, 255, 255, 1);
 }
