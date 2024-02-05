@@ -12,9 +12,9 @@ body {
 .bttDayNight {
     background-color : white;
 }
-.mainSearchInput {
+.mainSearch-input {
     background-color : rgba(238, 238, 238, 1);
-    color : rgba(255, 255, 255, 1);
+    color : rgba(117, 117, 117, 1);
 }
 .mainGame__container {
     background-color : rgba(255, 255, 255, 1);

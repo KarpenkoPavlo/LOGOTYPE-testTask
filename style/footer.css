@@ -39,6 +39,10 @@
 }
 .footer-socialItem {
 }
+.footer-socialItem:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
 .footerRight {
     width: 100%;
     display: grid;
@@ -55,6 +59,7 @@
 .footerRight-itemOut {
 }
 .footerRight-itemsInside {
+    cursor: pointer;
 }
 .itemInside-title {
     font-size: 24px;
@@ -68,6 +73,9 @@
     padding-bottom: 3px;
     margin-left: 14px;
     list-style: disc;
+}
+.footerRight-itemInside:hover {
+    transform: scale(1.1);
 }
 
 .footerCopuright {

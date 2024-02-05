@@ -25,13 +25,32 @@ header {
     gap: 31px;
 }
 .headerLeft-item {
-    display: flex;
+    display: block;
+    align-items: center;
+    width: 120px;
     gap: 4.5px;
     cursor: pointer;
 }
-.headerLeft-item:hover {
-    text-decoration: underline;
+/* Лінії починаються з різних сторін */
+.headerLeft-item::before {
+    margin-left: auto;
 }
+/* Створюємо линії */
+.headerLeft-item::after,
+.headerLeft-item::before {
+    display: block;
+    content: '';
+    width: 0%; 
+    height: 2px;
+    background: linear-gradient(90deg, #51dfcf 0%, #0180ff 100%);
+}
+/* Лінії будуть займать всю ширину слова */
+.headerLeft-item:hover:after,
+.headerLeft-item:hover:before {
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+
 .headerRight {
     margin-left: auto;
 }
@@ -42,6 +61,8 @@ header {
 .headerRight-item {
     display: flex;
     cursor: pointer;
+}
+.headerRight-item:hover {
 }
 
 .bttDayNight {

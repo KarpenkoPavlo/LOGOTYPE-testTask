@@ -24,9 +24,25 @@
     font-weight: 500;
     cursor: pointer;
 }
-.mainHeader-item:hover {
-    text-decoration: underline;
+/* Лінії починаються з різних сторін */
+.mainHeader-item::before {
+    margin-left: auto;
 }
+/* Створюємо линії */
+.mainHeader-item::before {
+    display: block;
+    content: '';
+    width: 0%; 
+    height: 1px;
+    background: linear-gradient(90deg, #636565 0%, #0180ff 100%);
+}
+/* Лінії будуть займать всю ширину слова */
+.mainHeader-item:hover:after,
+.mainHeader-item:hover:before {
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+
 .mainSearch-form {
     margin-left: auto;
 }
@@ -38,19 +54,15 @@
     color: rgba(117, 117, 117, 1);
     background: rgba(238, 238, 238, 1);    
     border: none;
-    padding: 10px 21px;
+    padding: 10px 10px 10px 21px;
 }
 .mainSearch-input:focus {
     outline: none;
 }
-.mainSearch-input::after {
-    position: absolute;
-    content: '';
+.mainSearch-input::placeholder {
     background: url(../img/mainHeader/mainSearch.svg);
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .header__burger {
@@ -90,6 +102,25 @@
 .header__burger.cross .burger-line:nth-child(3) {
   transform: rotate(45deg) translate(-12px);
 }
+
+.mainHide {
+    display: none;
+}
+.mainHide-items {
+    display: flex;
+    justify-content: space-between;
+}
+.mainHide-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.5px; 
+    color: rgba(112, 112, 112, 1);
+    gap: 5px;
+}
 @media (max-width: 991px) {
     .mainHeader__container {
         display: grid;
@@ -128,7 +159,45 @@
     .mainSearch-form {
         order: 3;
     }
+    .mainHide {
+        order: 4;
+    }
     .mainHeader-menu {
         order: 4;
+        grid-row: 3;
+        grid-column: span 4;
+        text-align: end;
+    }
+    .mainHeader-items {
+        display: grid;
+        justify-content: center;
+        padding-top: 75px;
+        gap: 58px;
+    }
+    .mainSearch-form {
+        grid-column: span 4;
+        padding-top: 30px;
+    }
+    .mainHide {
+        padding-top: 161px;
+        grid-row: 4;
+        grid-column: span 4;
+    }
+}
+
+@media (max-width: 660px) {
+    .mainHeader-items {
+        gap: 28px;
+    }
+    .mainHeader-items {
+        padding-top: 50px;
+    }
+    .mainHide {
+        padding-top: 103px;
+    }
+    .mainHide-items {
+        display: grid;
+        justify-content: center;
+        gap: 23px;
     }
 }

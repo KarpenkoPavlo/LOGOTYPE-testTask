@@ -12,7 +12,7 @@ body {
 .bttDayNight {
     background-color : #183A5D;
 }
-.mainSearchInput {
+.mainSearch-input {
     background-color : rgba(24, 58, 93, 1);
     color : rgba(255, 255, 255, 1);
 }
@@ -27,4 +27,20 @@ body {
 }
 .footerText {
     color: rgba(255, 255, 255, 1);
+}
+.mainGame-burgerH {
+    color: white;
+}
+.mainGameBurger-line {
+    background: white;
+}
+.mainHide-item {
+    color: white;
+}
+.mainEvaluation-ratingItem {
+    background: rgba(24, 58, 93, 1);
+    color: white;
+}
+.mainEvaluation-item:hover {
+    color: white;
 }
