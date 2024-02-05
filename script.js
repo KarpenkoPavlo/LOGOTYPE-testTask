@@ -2,6 +2,7 @@
 let themeDayDark = document.getElementById('themeDayDark');
 let lightThemeLink = document.getElementById('lightTheme');
 let darkThemeLink = document.getElementById('darkTheme');
+let bttDayNight = document.querySelector('.bttDayNight');
 let mainInfoItem = document.querySelectorAll('.mainInfo-item');
 let mainHeaderItem = document.querySelectorAll('.mainHeader-item');
 let mainHeaderImgLogo = document.querySelector('.mainHeaderImgLogo');

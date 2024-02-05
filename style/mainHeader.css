@@ -120,6 +120,10 @@
     letter-spacing: 0.5px; 
     color: rgba(112, 112, 112, 1);
     gap: 5px;
+    cursor: pointer;
+}
+.mainHide-item:hover {
+    transform: scale(1.1);
 }
 @media (max-width: 991px) {
     .mainHeader__container {

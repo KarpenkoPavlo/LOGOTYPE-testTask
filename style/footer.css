@@ -130,4 +130,7 @@
         display: grid;
         justify-content: center;
     }
+    .footerRight-itemInside:not(:last-child) {
+        margin-bottom: 5px;
+    }
 }
