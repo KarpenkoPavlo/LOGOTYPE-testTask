@@ -4,11 +4,17 @@
 
 ---
 
-<h6>Layout of a one-page site using HTML,CSS,JavaScript.</h6>
+![Foto](/img/netlify/pageSpeed-mobile.png)
+
+---
+
+![Foto](/img/netlify/pageSpeed-desktop.png)
+
+
 
 ---
 
 >[Netlify](https://logotype-test-task.netlify.app/)
 
 ---
-<h6>Unfinished</h6>
+<h6>Finished</h6>
